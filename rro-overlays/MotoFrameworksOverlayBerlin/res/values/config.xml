@@ -235,10 +235,12 @@
     <!-- Boolean indicating if current platform supports HFP inband ringing -->
     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
-    <!-- The default refresh rate for a given device. If a non-zero value is set for
-         config_defaultPeakRefreshRate, then config_defaultRefreshRate may be set to 0, in that case
-         the value set for config_defaultPeakRefreshRate will act as the default peak frame rate -->
+    <!-- Refresh rate configs -->
+    <integer name="config_defaultFixedOnPeakRefreshRate">0</integer>
+    <integer name="config_defaultMinRefreshRate">60</integer>
+    <integer name="config_defaultPeakRefreshRate">144</integer>
     <integer name="config_defaultRefreshRate">0</integer>
+    <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- Whether to select voice/data/sms preference without user confirmation -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
