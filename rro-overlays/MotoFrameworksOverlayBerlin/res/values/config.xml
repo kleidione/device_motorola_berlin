@@ -580,4 +580,8 @@
 
      <!-- The max scale for the wallpaper when it's zoomed in -->
     <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
+    <!-- Default refresh rate while the device has high brightness mode enabled for HDR. -->
+    <integer name="config_defaultRefreshRateInHbmHdr">60</integer>
+
 </resources>
