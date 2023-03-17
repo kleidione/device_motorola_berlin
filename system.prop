@@ -9,11 +9,11 @@ media.aac_51_output_enabled=true
 # Charger
 ro.charger.enable_suspend=1
 
-# Display
-debug.sf.enable_hwc_vds=1
-
 # CNE
 persist.vendor.cne.feature=1
+
+# Display
+debug.sf.enable_hwc_vds=1
 
 # Data
 persist.data.df.agg.dl_pkt=10
@@ -26,6 +26,10 @@ persist.data.df.ul_mode=5
 
 # DPM
 persist.vendor.dpm.feature=11
+
+# Google
+ro.opa.device_model_id=motorola-berlin
+ro.opa.eligible_device=true
 
 # HWUI
 debug.hwui.skia_atrace_enabled=false

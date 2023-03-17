@@ -116,6 +116,7 @@ ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=8
 
 # Bluetooth
+bluetooth.device.default_name=Motorola Edge 20
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
@@ -153,7 +154,9 @@ vendor.qcom.bluetooth.soc=moselle
 
 # Camera
 camera.disable_zsl_mode=1
-persist.vendor.camera.privapp.list=com.motorola.camera3
+persist.vendor.camera.physical.num=4
+persist.vendor.camera.privapp.list=com.google.android.GoogleCameraEng
+vendor.camera.aux.packagelist=com.google.android.GoogleCameraEng
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2
@@ -246,8 +249,12 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
+# Motorola
+ro.mot.build.customerid=global
+
 # NFC
 ro.nfc.port=I2C
+ro.vendor.hw.nfc=st
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
@@ -320,18 +327,12 @@ debug.stagefright.c2inputsurface=-1
 
 # Surfaceflinger
 ro.sf.lcd_density=400
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.protected_contents=true
 ro.surface_flinger.set_idle_timer_ms=250
 ro.surface_flinger.set_touch_timer_ms=1000
-ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.use_smart_90_for_video=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # USB
 sys.usb.mtp.batchcancel=1

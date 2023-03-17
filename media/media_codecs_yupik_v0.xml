@@ -51,7 +51,7 @@
  | h264        | 4096   2176    60      100    2088960 |
  | hevc        | 4096   2176    60      100    2088960 |
  | vp9         | 4096   2176    60      100    2088960 |
- | mpeg2       | 1920   1088    30       40     244800 |
+ | mpeg2       | 1920   1080    30       40     244800 |
  |_____________|_______________________________________|
 
  Yupik Secure decoder capabilities
@@ -213,7 +213,7 @@
         </MediaCodec>
         <MediaCodec name="c2.qti.mpeg2.decoder" type="video/mpeg2" >
             <Alias name="OMX.qcom.video.decoder.mpeg2"/>
-            <Limit name="size" min="96x96" max="1920x1088" />
+            <Limit name="size" min="96x96" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="block-count" range="36-8160" />
