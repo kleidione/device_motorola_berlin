@@ -49,3 +49,4 @@ genfscon sysfs /devices/platform/soc/soc:mmi,charger/wakeup                     
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery/wakeup               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:mmi,charger/power_supply/mmi_battery/power/wakeup         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100/rtc/rtc0/wakeup12      u:object_r:sysfs_wakeup:s0
